@@ -1,6 +1,6 @@
 import unittest
 
-from ..src.prime_factors import PrimeFactors
+from src.prime_factors import PrimeFactors
 
 
 class PrimeFactorsTest(unittest.TestCase):

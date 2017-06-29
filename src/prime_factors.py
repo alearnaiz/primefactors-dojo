@@ -1,5 +1,3 @@
-
-
 class PrimeFactors:
 
     @staticmethod
