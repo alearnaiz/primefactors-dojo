@@ -4,13 +4,14 @@ class PrimeFactors:
     def generate(number):
         primes = []
 
-        for possible in range(2, number+1):
-            if possible > number:
-                break
+        for possible_prime in range(2, number+1):
+            if number % possible_prime == 0:
+                primes.append(possible_prime)
 
-            if number % possible == 0:
-                primes.append(possible)
-                while number % possible == 0:
-                    number = number / possible
+                while number % possible_prime == 0:
+                    number = number / possible_prime
+
+                if number == 1:
+                    break
 
         return primes
